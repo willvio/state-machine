@@ -1,0 +1,19 @@
+<!DOCTYPE HTML >
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+   </HEAD>
+   <BODY><a href="abcdefghijklmn"	 >
+   		I went scuba diving last summer
+  </a>
+      <P>Hello world</P>
+	  <a href="abcdefghijklmn"	 >
+   		I went scuba diving last summer
+  </a>
+       <a href="ABCDEFGHIJKLMN" >
+   		I ca go this summer
+  </a> <P>Hello world</P><a href="abcdefghijklmn"	 >
+   		I went scuba diving last summer
+  </a>
+   </BODY>
+</HTML>

@@ -1,0 +1,15 @@
+<!DOCTYPE HTML >
+<HTML>
+   
+     My first HTML document
+   </HEAD>
+   <BODY>
+      <P>Hello world</P>
+	  <a href="abcdefghijklmn"	 >
+   		I went scuba diving last summer
+  </a>
+       <a href="ABCDEFGHIJKLMN" >
+   		I ca go this summer
+  </a>
+   </BODY>
+</HTML>
