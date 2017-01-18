@@ -1,15 +1,20 @@
 <!DOCTYPE HTML >
 <HTML>
    <HEAD>
-      <TITLE>My first HTML document</TITLE>
+      <TITLE>My first "http://someplace.com/neatstuff.gif" HTML document</TITLE>
    </HEAD>
    <BODY>
       
-	  <a href="abcdefghijklmn"	 >
+	  <a href="http://someplace.com/neatstuff.gif"	 >
    		I went scuba diving last summer
   </a>
-       <a href="ABCDEFGHIJKLMN" >
+       <a href="http://someplace.com/neatstuff.gif" >
+   		I ca go this summer
+  </a><a href="http://someplace.com/neatstuff.gif"	 >
+   		I went scuba diving last summer
+  </a>
+       <a href="http://someplace.com/neatstuff.gif" >
    		I ca go this summer
   </a>
    </BODY>
-</HTML>
+</HTML>   			

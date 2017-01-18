@@ -5,11 +5,15 @@
    </HEAD>
    <BODY>
       <P>Hello world</P>
-	  <a href="abcdefghijklmn"	 >
+	  <a href="http://someplace.com/neatstuff.gif"	 >
    		I went scuba diving last summer
   </a>
-       <a href="ABCDEFGHIJKLMN" >
+       <a href="http://someplace.com/badstuff.gif" >
    		I ca go this summer
   </a>
    </BODY>
-</HTML>
+</HTML>			
+
+
+	
+	
