@@ -84,20 +84,30 @@ public class main {
 //                System.out.println("The HTML is grammatical!");
                 pass.add(file);
                 //打印http
-//                ArrayList<Integer> quotation = new ArrayList<Integer>();
+                ArrayList<Integer> quotation = new ArrayList<Integer>(0);
 //                for(int j = 0; j < text.size(); j++){
 //                    if(text.get(j).equals("\"")){
 //                        quotation.add(j);
 //                    }
 //                }
-//                for(int q = 0; q < quotation.size(); q+=2){
-//                    int begin = quotation.get(q);
-//                    int end = quotation.get(q+1);
-//                    for(int d = begin+1; d<end; d++){
-//                        System.out.printf(text.get(d));
-//                    }
-//                    System.out.printf("\n");
-//                }
+                ArrayList<Integer> httpSequence = judge.getHttp();
+                for (int j = 0; j < httpSequence.size(); j++ ){
+                    int search = httpSequence.get(j)+6;
+                    while (!text.get(search).equals("\"")){
+                        search++;
+                    }
+                    quotation.add(httpSequence.get(j)+5);
+                    quotation.add(search);
+                }
+
+                for(int q = 0; q < quotation.size(); q+=2){
+                    int begin = quotation.get(q);
+                    int end = quotation.get(q+1);
+                    for(int d = begin+1; d<end; d++){
+                        System.out.printf(text.get(d));
+                    }
+                    System.out.printf("\n");
+                }
             }else if(rule.get(judge.getCurrState()).getStateNext()[0] != -1){
 //                System.out.println("The HTML is not grammatical!");
                 fail.add(file);
@@ -110,7 +120,32 @@ public class main {
                     if(leftText.get(i).equals("-1")){
 //                        System.out.println("The HTML is grammatical!");
                         pass.add(file);
+
                         //打印http
+                        ArrayList<Integer> quotation = new ArrayList<Integer>(0);
+//                for(int j = 0; j < text.size(); j++){
+//                    if(text.get(j).equals("\"")){
+//                        quotation.add(j);
+//                    }
+//                }
+                        ArrayList<Integer> httpSequence = judge.getHttp();
+                        for (int j = 0; j < httpSequence.size(); j++ ){
+                            int search = httpSequence.get(j)+6;
+                            while (!text.get(search).equals("\"")){
+                                search++;
+                            }
+                            quotation.add(httpSequence.get(j)+5);
+                            quotation.add(search);
+                        }
+
+                        for(int q = 0; q < quotation.size(); q+=2){
+                            int begin = quotation.get(q);
+                            int end = quotation.get(q+1);
+                            for(int d = begin+1; d<end; d++){
+                                System.out.printf(text.get(d));
+                            }
+                            System.out.printf("\n");
+                        }
 //                        ArrayList<Integer> quotation = new ArrayList<Integer>();
 //                        for(int j = 0; j < text.size(); j++){
 //                            if(text.get(j).equals("\"")){
